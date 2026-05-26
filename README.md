@@ -2,6 +2,8 @@
 
 Personal portfolio website built with React and Vite, showcasing my projects and skills as an Engineering (EIE) student.
 
+Project data is fetched live from the **GitHub REST API** with localStorage caching, so adding or updating a repo on GitHub automatically reflects on the site.
+
 ## Live Site
 
 **https://wanggoldx.github.io/portfolio**
@@ -10,45 +12,21 @@ Personal portfolio website built with React and Vite, showcasing my projects and
 
 Hi, I'm **LAU Wang Chun**, an Engineering (EIE) student passionate about AI and Embedded Systems. I build innovative solutions that bridge the gap between hardware and software.
 
+## Features
+
+- **GitHub API Integration** — project cards sourced from `api.github.com/users/wanggoldx/repos`
+- **Smart Caching** — localStorage cache with 1-hour TTL; cache-first render with background refresh
+- **Graceful Degradation** — falls back to bundled data on network error or rate-limit
+- **Skeleton Loading** — shimmer animation while data loads
+- **Dynamic Card UI** — language badges, live demo links, repo social preview images
+- **Dark Mode** — light/dark theme via React Context + CSS custom properties
+
 ## Skills
 
-- Python
-- Embedded Systems
-- C/C++
-- React
-- AI/ML
-
-## Projects
-
-### Deep Neural Network - Photonic Power Splitters
-Deep learning-based inverse design of integrated photonic power splitters using neural networks.
-
-**Tech Stack**: Python, PyTorch, TensorFlow, NumPy, Lumerical FDTD
-- [View on GitHub](https://github.com/wanggoldx/Deep-Neural-Network-Inverse-Design-of-Integrated-Photonic-Power-Splitters)
-
-### EIE3106 - Embedded Systems & Robotics
-Embedded systems programming using microcontroller-based robot cars with IR remote control, line tracking, and obstacle avoidance.
-
-**Tech Stack**: C, Embedded C, STM32, IR Control, Ultrasound
-- [View on GitHub](https://github.com/wanggoldx/EIE3106-project)
-
-### EIE3373 - Microcontroller Systems (AVR)
-Microcontroller systems using AVR family (ATmega328P/Arduino Uno).
-
-**Tech Stack**: C, AVR, ATmega328P, Arduino
-- [View on GitHub](https://github.com/wanggoldx/EIE3373-money)
-
-### EIE3320 - Java Programming
-Object-oriented programming with Java.
-
-**Tech Stack**: Java, OOP, AWT/Swing, Collections
-- [View on GitHub](https://github.com/wanggoldx/EIE3320-java)
-
-### EIE2111 - C++ Programming
-Introduction to C++ Programming course materials.
-
-**Tech Stack**: C++, C#, Visual Studio
-- [View on GitHub](https://github.com/wanggoldx/EIE2111)
+- **Languages**: Python, C/C++, Java, Embedded C, JavaScript
+- **Frameworks**: React, PyTorch, TensorFlow
+- **Hardware**: STM32, AVR (ATmega328P/Arduino Uno)
+- **Tools**: Git, Visual Studio, STM32CubeIDE
 
 ## Contact
 
@@ -58,9 +36,12 @@ Introduction to C++ Programming course materials.
 
 ## Tech Stack
 
-- React 19
-- Vite 8
-- ESLint
+- **React 19** — UI framework
+- **Vite 8** — bundler and dev server
+- **GitHub REST API** — live project data
+- **localStorage** — API response caching
+- **CSS Custom Properties** — theming (light/dark)
+- **ESLint** — code linting
 
 ## Getting Started
 
