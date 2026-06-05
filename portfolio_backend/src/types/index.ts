@@ -1,8 +1,12 @@
-export interface ProjectConfig {
+export interface DBProject {
+  id: number;
   repo: string;
   title: string;
   description: string;
-  techStack: string[];
+  tech_stack: string[];
+  is_active: boolean;
+  created_at: Date;
+  updated_at: Date;
 }
 
 export interface GitHubRepo {
@@ -11,6 +15,7 @@ export interface GitHubRepo {
   homepage: string | null;
   language: string | null;
   topics: string[];
+  description: string | null;
 }
 
 export interface Project {

@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-monorepo",
+  "private": true,
+  "workspaces": [
+    "portfolio_backend",
+    "portfolio_frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w portfolio_backend\" \"npm run dev -w portfolio_frontend\"",
+    "build": "npm run build -w portfolio_frontend && npm run build -w portfolio_backend",
+    "start": "npm start -w portfolio_backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

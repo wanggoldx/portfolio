@@ -35,7 +35,7 @@ function Projects() {
             Here are some of my GitHub repositories showcasing my work in machine learning, embedded systems, and programming.
           </p>
           <div className="projects-grid">
-            {[1, 2, 3, 4, 5].map((i) => (
+            {[1, 2, 3].map((i) => (
               <div key={i} className="project-card project-card-skeleton">
                 <div className="skeleton-image" />
                 <div className="project-content">
