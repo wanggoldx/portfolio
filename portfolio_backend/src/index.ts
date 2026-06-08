@@ -29,7 +29,7 @@ app.get('/health', (_req, res) => {
 async function start() {
   await migrate();
   await syncReposToDb();
-  app.listen(PORT, 'localhost', () => {
+  app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on http://localhost:${PORT}`);
   });
 }

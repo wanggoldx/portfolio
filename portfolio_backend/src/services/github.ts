@@ -3,7 +3,7 @@ import crypto from 'crypto';
 import pool from '../database/db';
 import { DBProject, GitHubRepo, Project } from '../types';
 
-const GITHUB_USER = 'wanggoldx';
+const GITHUB_USER = process.env.GITHUB_USER || 'wanggoldx';
 
 function capitalizeTopics(topics: string[]): string[] {
   return topics.map(t => t.charAt(0).toUpperCase() + t.slice(1));
